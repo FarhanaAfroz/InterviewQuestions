@@ -22,23 +22,27 @@ public class FindDuplicateNumber {
 			times[i] = 1;
 		}
 		
-		//search for duplicate elements
+		scr.close();
+		
+		//search for duplicate elements 
+		System.out.println("Duplicate value    how many times repeate" );
 		for(int j = 0; j < crr_array.length; j++){
 			for(int i = j; i < crr_array.length; i++){
 				if(crr_array[j] == crr_array[i] && j != i){
 					new_array[i] = crr_array[i];
 					times[i]++;
+					System.out.print("\t" + new_array[i] + "\t\t\t" + times[i] + "\n"); //display output
 				}
-				System.out.println(crr_array[i] + "\t" + times[i]);
 			}
 		}
 		
-		//Display the output
-		//for(int i = 0; i < new_array.length; i++){
-			//System.out.println(new_array[i] + "\t" + times[i]);
-			
-		//}
-		
+		//sort the array
+		/*
+		for(int i = 0; i < crr_array.length; i++){
+			Arrays.sort(crr_array);
+			System.out.print(crr_array[i] + "\t" );
+		}
+		*/		
 	}
 
 }
