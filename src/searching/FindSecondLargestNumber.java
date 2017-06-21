@@ -12,7 +12,7 @@ public class FindSecondLargestNumber {
 		n = scr.nextInt();
 		if(n>1){
 			int [] array = new int[n];
-			System.out.println("Enter all the elements:");
+			System.out.println("Enter all the elements of array:");
 			 for(int i = 0; i < n; i++){
 				 array[i] = scr.nextInt();
 			 }
@@ -21,7 +21,7 @@ public class FindSecondLargestNumber {
 			 
 			 for(int i = 0; i < n; i++){
 				 for(int j = i+1; j < n; j++){
-					 if(array[i] < array[j]){
+					 if(array[i] < array[j]){ // search the largest number
 						 temp = array[i];
 						 array[i] = array[j];
 						 array[j] = temp;
@@ -34,7 +34,7 @@ public class FindSecondLargestNumber {
 			 System.out.println("Second Largest number is:" + array[1]);
 		}
 		else
-			System.out.println("Enter number greater than 1");
+			System.out.println("Enter number greater than one");
 		
 	}
 
